@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 80px 30px 80px;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}/*# sourceMappingURL=Header.css.map */
