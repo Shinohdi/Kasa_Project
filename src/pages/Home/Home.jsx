@@ -1,17 +1,9 @@
 import '../../styles/Home/Home.css';
-import background from '../../images/e270fc8fc902a1eb738458e7b29c1899.jpg';
+import Banner from '../../components/Banner/Banner';
+import landscape from '../../images/Home-Background.jpg';
 
 function Home() {
-    return (
-        <div className="description">
-            <div className="description__text">
-                <h1>Chez vous, partout et ailleurs</h1>
-            </div>
-            <div className="description__mask">
-                <img src={background} alt="Description Background" />
-            </div>
-        </div>
-    );
+    return <Banner background={landscape} />;
 }
 
 export default Home;
