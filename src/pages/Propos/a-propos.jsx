@@ -1,14 +1,8 @@
-import { useParams } from 'react-router-dom';
+import Banner from '../../components/Banner/Banner';
+import landscape from '../../images/A_propos-Background.png';
 
-function Survey() {
-    const { questionNumber } = useParams();
-
-    return (
-        <div>
-            <h1>Questionnaire 🧮</h1>
-            <h2>Question {questionNumber}</h2>
-        </div>
-    );
+function Propos() {
+    return <Banner background={landscape} masking={true} />;
 }
 
-export default Survey;
+export default Propos;

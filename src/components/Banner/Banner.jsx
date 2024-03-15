@@ -1,12 +1,18 @@
-function Banner({ background }) {
+import '../../styles/Banner/Banner.css';
+
+function Banner({ background, text, masking }) {
     return (
-        <div className="description">
-            <div className="description__text">
-                <h1>Chez vous, partout et ailleurs</h1>
+        <div className="banner">
+            <div className="banner__text">
+                <h1>{text}</h1>
             </div>
-            <div className="description__mask">
+            {masking ? (
+                <div className="banner__mask">
+                    <img src={background} alt="Banner Background" />
+                </div>
+            ) : (
                 <img src={background} alt="Banner Background" />
-            </div>
+            )}
         </div>
     );
 }
