@@ -1,0 +1,35 @@
+.collapse {
+    &__button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 52px;
+        padding-left: 15px;
+        padding-right: 20px;
+        border-radius: 5px;
+        background-color: #ff6060;
+
+        p,
+        i {
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        i {
+            font-size: 32px;
+        }
+    }
+
+    &__content {
+        background-color: #f6f6f6;
+        border-radius: 10px 10px 5px 5px;
+        padding: 5px;
+        padding-left: 20px;
+
+        p {
+            font-size: 18px;
+        }
+    }
+}

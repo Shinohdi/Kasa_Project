@@ -1,0 +1,11 @@
+.collapseElements {
+  margin-top: 55px;
+  margin-bottom: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+.collapseElements .collapse {
+  width: 1023px;
+}/*# sourceMappingURL=a-propos.css.map */

@@ -1,0 +1,29 @@
+.collapse__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+  padding-left: 15px;
+  padding-right: 20px;
+  border-radius: 5px;
+  background-color: #ff6060;
+}
+.collapse__button p,
+.collapse__button i {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+.collapse__button i {
+  font-size: 32px;
+}
+.collapse__content {
+  background-color: #f6f6f6;
+  border-radius: 10px 10px 5px 5px;
+  padding: 5px;
+  padding-left: 20px;
+}
+.collapse__content p {
+  font-size: 18px;
+}/*# sourceMappingURL=Collapse.css.map */
