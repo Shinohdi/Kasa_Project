@@ -5,7 +5,7 @@ import '../../styles/Propos/a-propos.css';
 
 function Propos() {
     return (
-        <div>
+        <div className="propos">
             <Banner background={landscape} masking={true} />
             <div className="collapseElements">
                 <Collapse

@@ -1,1 +1,15 @@
-/*# sourceMappingURL=Home.css.map */
+.home {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.cardsList {
+  padding: 40px;
+  border-radius: 25px;
+  gap: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #f6f6f6;
+}/*# sourceMappingURL=Home.css.map */
