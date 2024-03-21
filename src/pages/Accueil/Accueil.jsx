@@ -1,4 +1,4 @@
-import '../../styles/Home/Home.css';
+import '../../styles/Accueil/Accueil.css';
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/Card';
 import landscape from '../../images/Home-Background.jpg';

@@ -1,0 +1,28 @@
+.page {
+  margin: 60px 80px 50px 80px;
+}
+.page__carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+.page__carousel img {
+  border-radius: 25px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page__text .title {
+  color: #ff6060;
+  font-size: 36px;
+  font-weight: 500;
+}
+.page__collapseElements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.page__collapseElements .collapse {
+  width: 800px;
+}/*# sourceMappingURL=Logement.css.map */

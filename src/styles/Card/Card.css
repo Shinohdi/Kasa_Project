@@ -1,7 +1,11 @@
+.cWidth {
+  width: 30%;
+}
+
 .card {
   max-height: 340px;
   list-style: none;
-  width: 28%;
+  width: 100%;
   position: relative;
 }
 .card::after {
