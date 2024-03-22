@@ -12,7 +12,9 @@ function Home() {
             <Banner background={landscape} text={banner_text} masking={true} />
             <ul className="cardsList">
                 {apartmentList.map(({ id, title, cover }) => (
-                    <Card id={id} title={title} cover={cover} />
+                    <div key={id} className="cWidth">
+                        <Card id={id} title={title} cover={cover} />
+                    </div>
                 ))}
             </ul>
         </div>

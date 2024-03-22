@@ -3,18 +3,18 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 80px 50px 80px;
+  margin: 30px 120px 50px 120px;
 }
 
-nav {
+.navbar {
   display: flex;
   gap: 40px;
 }
-nav a {
+.navbar a {
   text-decoration: none;
   color: black;
   font-size: 24px;
 }
-nav a:focus {
+.navbar .active {
   text-decoration: underline;
 }/*# sourceMappingURL=Header.css.map */
