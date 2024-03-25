@@ -13,15 +13,74 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-.page__text .title {
+.page__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.page__text--details .title {
   color: #ff6060;
   font-size: 36px;
   font-weight: 500;
+  margin: 0;
+}
+.page__text--details .location {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.page__text--details .tags {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.page__text--details .tags .tag {
+  color: white;
+  text-align: center;
+  padding: 5px 15px 5px 15px;
+  min-width: 100px;
+  border-radius: 10px;
+  background-color: #ff6060;
+}
+.page__text--rate .host {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.page__text--rate .host .name {
+  text-align: end;
+  color: #ff6060;
+  font-size: 18px;
+  max-width: 93px;
+}
+.page__text--rate .host .picture {
+  width: 64px;
+  height: 64px;
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+}
+.page__text--rate .ratings {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+.page__text--rate .ratings .fa-star {
+  font-size: 24px;
+}
+.page__text--rate .ratings .colored {
+  color: #ff6060;
+}
+.page__text--rate .ratings .noColor {
+  color: #e3e3e3;
 }
 .page__collapseElements {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 20px;
 }
 .page__collapseElements .collapse {
   width: 800px;

@@ -15,10 +15,74 @@
     }
 
     &__text {
-        .title {
-            color: #ff6060;
-            font-size: 36px;
-            font-weight: 500;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        &--details {
+            .title {
+                color: #ff6060;
+                font-size: 36px;
+                font-weight: 500;
+                margin: 0;
+            }
+            .location {
+                margin: 0;
+                font-size: 18px;
+                font-weight: 500;
+            }
+            .tags {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                .tag {
+                    color: white;
+                    text-align: center;
+                    padding: 5px 15px 5px 15px;
+                    min-width: 100px;
+                    border-radius: 10px;
+                    background-color: #ff6060;
+                }
+            }
+        }
+
+        &--rate {
+            .host {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                .name {
+                    text-align: end;
+                    color: #ff6060;
+                    font-size: 18px;
+                    max-width: 93px;
+                }
+                .picture {
+                    width: 64px;
+                    height: 64px;
+                    clip-path: circle(50%);
+                }
+            }
+            .ratings {
+                display: flex;
+                justify-content: end;
+                gap: 10px;
+
+                .fa-star {
+                    font-size: 24px;
+                }
+                .colored {
+                    color: #ff6060;
+                }
+                .noColor {
+                    color: #e3e3e3;
+                }
+            }
         }
     }
 
@@ -26,6 +90,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap: 20px;
 
         .collapse {
             width: 800px;

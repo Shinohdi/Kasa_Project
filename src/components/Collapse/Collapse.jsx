@@ -23,9 +23,7 @@ function Collapse({ collapseTitle, collapseContent }) {
                     className="fa-solid fa-chevron-up"
                 ></i>
             </div>
-            <div className="collapse__content">
-                <p>{collapseContent}</p>
-            </div>
+            <div className="collapse__content">{collapseContent}</div>
         </div>
     );
 }
