@@ -40,9 +40,15 @@ function Logement() {
                     <div className="ratings">
                         {rateRange.map((rangeElem) =>
                             apartment.rating >= rangeElem ? (
-                                <i class="fa-solid fa-star colored"></i>
+                                <i
+                                    key={rangeElem}
+                                    className="fa-solid fa-star colored"
+                                ></i>
                             ) : (
-                                <i class="fa-solid fa-star noColor"></i>
+                                <i
+                                    key={rangeElem}
+                                    className="fa-solid fa-star noColor"
+                                ></i>
                             ),
                         )}
                     </div>
@@ -55,12 +61,13 @@ function Logement() {
                 />
                 <Collapse
                     collapseTitle="Équipements"
-                    collapseContent={apartment.equipments.map((equipement) => (
-                        <p>
-                            {equipement}
-                            <br />
-                        </p>
-                    ))}
+                    collapseContent={
+                        <ul>
+                            {apartment.equipments.map((equipement) => (
+                                <li key={equipement}>{equipement}</li>
+                            ))}
+                        </ul>
+                    }
                 />
             </div>
         </div>

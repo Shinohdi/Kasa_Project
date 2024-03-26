@@ -6,8 +6,8 @@
   height: 52px;
   padding-left: 15px;
   padding-right: 20px;
-  border-radius: 5px;
   background-color: #ff6060;
+  transition: border-radius 0.3s ease-in-out;
 }
 .collapse__button p,
 .collapse__button i {
@@ -17,6 +17,7 @@
 }
 .collapse__button i {
   font-size: 32px;
+  transition: transform 0.3s ease-in-out;
 }
 .collapse__content {
   box-sizing: border-box;
@@ -25,7 +26,39 @@
   border-radius: 10px 10px 5px 5px;
   padding: 5px;
   padding-left: 20px;
+  overflow: hidden;
+  transition-property: max-height, padding;
+  transition: 0.3s ease-in-out;
 }
 .collapse__content p {
   font-size: 18px;
+}
+.collapse__content ul {
+  padding: 0;
+  list-style: none;
+}
+.collapse__content ul li {
+  font-size: 18px;
+}
+
+.openCollapse .collapse__button {
+  border-radius: 5px;
+}
+.openCollapse .collapse__button i {
+  transform: rotate(180deg);
+}
+.openCollapse .collapse__content {
+  max-height: 200px;
+}
+
+.closeCollapse .collapse__button {
+  border-radius: 10px;
+}
+.closeCollapse .collapse__button i {
+  transform: rotate(0);
+}
+.closeCollapse .collapse__content {
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }/*# sourceMappingURL=Collapse.css.map */

@@ -7,8 +7,8 @@
         height: 52px;
         padding-left: 15px;
         padding-right: 20px;
-        border-radius: 5px;
         background-color: #ff6060;
+        transition: border-radius 0.3s ease-in-out;
 
         p,
         i {
@@ -16,9 +16,9 @@
             font-size: 24px;
             font-weight: 700;
         }
-
         i {
             font-size: 32px;
+            transition: transform 0.3s ease-in-out;
         }
     }
 
@@ -29,9 +29,46 @@
         border-radius: 10px 10px 5px 5px;
         padding: 5px;
         padding-left: 20px;
+        overflow: hidden;
+        transition-property: max-height, padding;
+        transition: 0.3s ease-in-out;
 
         p {
             font-size: 18px;
         }
+
+        ul {
+            padding: 0;
+            list-style: none;
+
+            li {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.openCollapse {
+    .collapse__button {
+        border-radius: 5px;
+        i {
+            transform: rotate(180deg);
+        }
+    }
+    .collapse__content {
+        max-height: 200px;
+    }
+}
+.closeCollapse {
+    .collapse__button {
+        border-radius: 10px;
+        i {
+            transform: rotate(0);
+        }
+    }
+    .collapse__content {
+        max-height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
