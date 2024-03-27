@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import apartmentList from '../../datas/logement.json';
 import Collapse from '../../components/Collapse/Collapse';
+import Carousel from '../../components/Carousel/Carousel';
 import '../../styles/Logement/Logement.css';
 
 function Logement() {
@@ -10,12 +11,7 @@ function Logement() {
 
     return (
         <div className="page">
-            <div className="page__carousel">
-                <img
-                    src={apartment.pictures[0]}
-                    alt={`${apartment.title} cover`}
-                ></img>
-            </div>
+            <Carousel pictures={apartment.pictures} title={apartment.title} />
             <div className="page__text">
                 <div className="page__text--details">
                     <h1 className="title">{apartment.title}</h1>
