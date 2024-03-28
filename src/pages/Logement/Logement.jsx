@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import apartmentList from '../../datas/logement.json';
 import Collapse from '../../components/Collapse/Collapse';
 import Carousel from '../../components/Carousel/Carousel';
@@ -9,11 +10,11 @@ function Logement() {
     const { idLogement } = useParams();
     const apartment = apartmentList.find((apart) => apart.id === idLogement);
 
-    return (
+    return apartment !== undefined ? (
         <div className="page">
             <Carousel pictures={apartment.pictures} title={apartment.title} />
-            <div className="page__text">
-                <div className="page__text--details">
+            <div className="page__property">
+                <div className="page__property--text">
                     <h1 className="title">{apartment.title}</h1>
                     <p className="location">{apartment.location}</p>
                     <div className="tags">
@@ -24,7 +25,7 @@ function Logement() {
                         ))}
                     </div>
                 </div>
-                <div className="page__text--rate">
+                <div className="page__property--specifics">
                     <div className="host">
                         <p className="name">{apartment.host.name}</p>
                         <img
@@ -67,6 +68,8 @@ function Logement() {
                 />
             </div>
         </div>
+    ) : (
+        <Navigate to={`/${idLogement}`} replace={true} />
     );
 }
 

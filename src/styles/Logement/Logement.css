@@ -10,31 +10,31 @@
   height: 415px;
   position: relative;
 }
-.page__text {
+.page__property {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.page__text--details .title {
+.page__property--text .title {
   color: #ff6060;
   font-size: 36px;
   font-weight: 500;
   margin: 0;
 }
-.page__text--details .location {
+.page__property--text .location {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
 }
-.page__text--details .tags {
+.page__property--text .tags {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
-.page__text--details .tags .tag {
+.page__property--text .tags .tag {
   color: white;
   text-align: center;
   padding: 5px 15px 5px 15px;
@@ -42,35 +42,35 @@
   border-radius: 10px;
   background-color: #ff6060;
 }
-.page__text--rate .host {
+.page__property--specifics .host {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
-.page__text--rate .host .name {
+.page__property--specifics .host .name {
   text-align: end;
   color: #ff6060;
   font-size: 18px;
   max-width: 93px;
 }
-.page__text--rate .host .picture {
+.page__property--specifics .host .picture {
   width: 64px;
   height: 64px;
   -webkit-clip-path: circle(50%);
           clip-path: circle(50%);
 }
-.page__text--rate .ratings {
+.page__property--specifics .ratings {
   display: flex;
   justify-content: end;
   gap: 10px;
 }
-.page__text--rate .ratings .fa-star {
+.page__property--specifics .ratings .fa-star {
   font-size: 24px;
 }
-.page__text--rate .ratings .colored {
+.page__property--specifics .ratings .colored {
   color: #ff6060;
 }
-.page__text--rate .ratings .noColor {
+.page__property--specifics .ratings .noColor {
   color: #e3e3e3;
 }
 .page__collapseElements {

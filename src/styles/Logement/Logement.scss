@@ -13,14 +13,14 @@ $maincolor: #ff6060;
         position: relative;
     }
 
-    &__text {
+    &__property {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-top: 30px;
         margin-bottom: 30px;
 
-        &--details {
+        &--text {
             .title {
                 color: $maincolor;
                 font-size: 36px;
@@ -49,7 +49,7 @@ $maincolor: #ff6060;
             }
         }
 
-        &--rate {
+        &--specifics {
             .host {
                 display: flex;
                 flex-direction: row;

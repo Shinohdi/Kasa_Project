@@ -30,7 +30,7 @@ function Carousel({ pictures, title }) {
         setIndexNow(newIndex);
     }
 
-    return (
+    return maxPictures > 1 ? (
         <div className="page__carousel">
             <img
                 className="page__carousel--picture"
@@ -54,6 +54,14 @@ function Carousel({ pictures, title }) {
                     {indexNow} / {maxPictures}
                 </p>
             </div>
+        </div>
+    ) : (
+        <div className="page__carousel">
+            <img
+                className="page__carousel--picture"
+                src={pictures[indexNow - 1]}
+                alt={`${title} cover n°${indexNow}`}
+            />
         </div>
     );
 }
