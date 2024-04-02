@@ -42,3 +42,21 @@
         object-fit: cover;
     }
 }
+
+@media (max-width: 1024px) {
+    .cWidth {
+        width: 100%;
+    }
+
+    .card {
+        &__text {
+            font-size: 18px;
+        }
+        &::after {
+            border-radius: 15px;
+        }
+        &__cover {
+            border-radius: 15px;
+        }
+    }
+}

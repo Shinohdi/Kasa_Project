@@ -6,4 +6,16 @@
   align-items: center;
   background-color: black;
   color: white;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    gap: 5px;
+    padding-bottom: 50px;
+  }
+  .footer p {
+    width: 133px;
+    font-size: 13px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=Footer.css.map */

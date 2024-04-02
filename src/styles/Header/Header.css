@@ -14,7 +14,24 @@
   text-decoration: none;
   color: black;
   font-size: 24px;
+  font-weight: 500;
 }
 .navbar .active {
   text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    margin: 30px 25px 50px 25px;
+  }
+  .header img {
+    width: 145px;
+  }
+  .navbar {
+    gap: 30px;
+  }
+  .navbar a {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
 }/*# sourceMappingURL=Header.css.map */

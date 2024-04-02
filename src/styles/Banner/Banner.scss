@@ -41,3 +41,33 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .banner {
+        max-height: 175px;
+        border-radius: 15px;
+        box-shadow: none;
+        margin-bottom: 0;
+
+        img {
+            height: 175px;
+            border-radius: 15px;
+        }
+        &__mask {
+            &::after {
+                border-radius: 15px;
+            }
+        }
+        &__text {
+            justify-content: flex-start;
+
+            h1 {
+                width: 380px;
+                top: 10px;
+                padding-left: 30px;
+                font-size: 40px;
+                text-shadow: none;
+            }
+        }
+    }
+}

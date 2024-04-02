@@ -17,4 +17,16 @@
 .error a {
   color: black;
   font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .error h1 {
+    font-size: 126px;
+  }
+  .error p {
+    text-align: center;
+    font-size: 24px;
+    max-width: 508px;
+  }
 }/*# sourceMappingURL=Error.css.map */

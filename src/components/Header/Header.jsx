@@ -7,6 +7,7 @@ function Header() {
         <div className="header">
             <img src={logo} alt="Kasa Logo" />
             <nav className="navbar">
+                {window.matchMedia('max-width: 1024px').matches}
                 <NavLink
                     to="/"
                     className={({ isActive }) => (isActive ? 'active' : '')}

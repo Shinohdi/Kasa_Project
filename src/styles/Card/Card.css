@@ -33,4 +33,19 @@
   height: 340px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .cWidth {
+    width: 100%;
+  }
+  .card__text {
+    font-size: 18px;
+  }
+  .card::after {
+    border-radius: 15px;
+  }
+  .card__cover {
+    border-radius: 15px;
+  }
 }/*# sourceMappingURL=Card.css.map */
