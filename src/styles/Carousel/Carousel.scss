@@ -29,8 +29,26 @@
     &__left {
         left: 25px;
     }
-
     &__right {
         right: 25px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .page__carousel {
+        &--number {
+            display: none;
+        }
+    }
+
+    .arrow {
+        width: 22px;
+
+        &__right {
+            right: 15px;
+        }
+        &__left {
+            left: 15px;
+        }
     }
 }

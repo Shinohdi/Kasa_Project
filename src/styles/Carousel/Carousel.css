@@ -29,4 +29,19 @@
 }
 .arrow__right {
   right: 25px;
+}
+
+@media (max-width: 1024px) {
+  .page__carousel--number {
+    display: none;
+  }
+  .arrow {
+    width: 22px;
+  }
+  .arrow__right {
+    right: 15px;
+  }
+  .arrow__left {
+    left: 15px;
+  }
 }/*# sourceMappingURL=Carousel.css.map */

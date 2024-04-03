@@ -50,9 +50,12 @@ $maincolor: #ff6060;
         }
 
         &--specifics {
+            display: flex;
+            flex-direction: column;
             .host {
                 display: flex;
                 flex-direction: row;
+                align-items: center;
                 gap: 10px;
 
                 .name {
@@ -92,7 +95,58 @@ $maincolor: #ff6060;
         gap: 20px;
 
         .collapse {
-            width: 800px;
+            width: 45%;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .page {
+        margin: 60px 25px 50px 25px;
+
+        &__property {
+            flex-direction: column;
+            margin-top: 10px;
+            margin-bottom: 5px;
+
+            &--text {
+                .title {
+                    font-size: 28px;
+                }
+                .location {
+                    margin-top: 15px;
+                }
+                .tags {
+                    margin-top: 10px;
+                    flex-wrap: wrap;
+                }
+            }
+            &--specifics {
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 15px;
+
+                .host {
+                    .picture {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+                .ratings {
+                    .fa-star {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        &__collapseElements {
+            flex-direction: column;
+            gap: 35px;
+
+            .collapse {
+                width: 100%;
+            }
         }
     }
 }
