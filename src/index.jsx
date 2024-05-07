@@ -19,7 +19,11 @@ root.render(
                 <Route path="/" element={<Home />} />
                 <Route path="/logement/:idLogement" element={<Logement />} />
                 <Route path="/a-propos" element={<Propos />} />
-                <Route path="*" element={<Error />} />
+                <Route
+                    //Pour toute url différente de ceux au dessus, on passe à la page erreur
+                    path="*"
+                    element={<Error />}
+                />
             </Routes>
             <Footer />
         </Router>

@@ -3,22 +3,26 @@ import arrowLeft from '../../images/arrow_left_ios-24px 1.png';
 import arrowRight from '../../images/arrow_right_ios-24px 1.png';
 import '../../styles/Carousel/Carousel.css';
 
+//
 function Carousel({ pictures, title }) {
+    //Numéro de l'image affiché.
     const [indexNow, setIndexNow] = useState(1);
     const maxPictures = pictures.length;
 
+    //Fonction qui va changer la variable indexNow en fonction du click de l'utilisateur sur le carrousel.
     function changePicture(direction) {
         let newIndex = indexNow;
-
         switch (direction) {
             case 'left':
                 newIndex--;
+                //Passe directement à l'image finale.
                 if (newIndex < 1) {
                     newIndex = maxPictures;
                 }
                 break;
             case 'right':
                 newIndex++;
+                //Passe directement à la première image.
                 if (newIndex > maxPictures) {
                     newIndex = 1;
                 }
@@ -26,10 +30,10 @@ function Carousel({ pictures, title }) {
             default:
                 return;
         }
-
         setIndexNow(newIndex);
     }
 
+    //S'il n'y a qu'une seule image, les boutons "Suivant" et "Précédent" ainsi que la numérotation n'apparaissent pas.
     return maxPictures > 1 ? (
         <div className="page__carousel">
             <img

@@ -6,10 +6,13 @@ import Carousel from '../../components/Carousel/Carousel';
 import '../../styles/Logement/Logement.css';
 
 function Logement() {
+    //Tableau pour le nombre max d'étoiles que l'on peut afficher
     const rateRange = [1, 2, 3, 4, 5];
+    //useParams() utilisé pour l'url de la page
     const { idLogement } = useParams();
+    //On cherche l'appartement que l'on va affiché grâce à idLogement dans le fichier .json
     const apartment = apartmentList.find((apart) => apart.id === idLogement);
-
+    //Si aucun appartement à été trouvé dans la liste, on passe à la page Erreur
     return apartment !== undefined ? (
         <div className="page">
             <Carousel pictures={apartment.pictures} title={apartment.title} />
@@ -36,6 +39,7 @@ function Logement() {
                     </div>
                     <div className="ratings">
                         {rateRange.map((rangeElem) =>
+                            //Fonctionne comme une boucle For(), on ajoute des étoiles en couleur tant que le rating (chiffre) est supérieur ou égal à rangeElem (incrémentation)
                             apartment.rating >= rangeElem ? (
                                 <i
                                     key={rangeElem}

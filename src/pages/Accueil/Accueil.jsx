@@ -10,7 +10,10 @@ function Home() {
     return (
         <div className="home">
             <Banner background={landscape} text={banner_text} masking={true} />
-            <ul className="cardsList">
+            <ul
+                //Mise en place des différents lien logements dans la page
+                className="cardsList"
+            >
                 {apartmentList.map(({ id, title, cover }) => (
                     <div key={id} className="cWidth">
                         <Card id={id} title={title} cover={cover} />

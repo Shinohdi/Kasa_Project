@@ -7,9 +7,9 @@ function Header() {
         <div className="header">
             <img src={logo} alt="Kasa Logo" />
             <nav className="navbar">
-                {window.matchMedia('max-width: 1024px').matches}
                 <NavLink
                     to="/"
+                    //Si on est sur la page Accueil ou À propos, le texte du lien se souligne
                     className={({ isActive }) => (isActive ? 'active' : '')}
                 >
                     Accueil
