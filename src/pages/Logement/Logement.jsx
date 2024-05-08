@@ -39,7 +39,8 @@ function Logement() {
                     </div>
                     <div className="ratings">
                         {rateRange.map((rangeElem) =>
-                            //Fonctionne comme une boucle For(), on ajoute des étoiles en couleur tant que le rating (chiffre) est supérieur ou égal à rangeElem (incrémentation)
+                            //On ajoute des étoiles en couleur tant que le rating (chiffre)
+                            //est supérieur ou égal à rangeElem (incrémentation)
                             apartment.rating >= rangeElem ? (
                                 <i
                                     key={rangeElem}

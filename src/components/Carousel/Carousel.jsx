@@ -3,7 +3,6 @@ import arrowLeft from '../../images/arrow_left_ios-24px 1.png';
 import arrowRight from '../../images/arrow_right_ios-24px 1.png';
 import '../../styles/Carousel/Carousel.css';
 
-//
 function Carousel({ pictures, title }) {
     //Numéro de l'image affiché.
     const [indexNow, setIndexNow] = useState(1);
