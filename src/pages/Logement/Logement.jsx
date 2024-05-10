@@ -57,20 +57,16 @@ function Logement() {
                 </div>
             </div>
             <div className="page__collapseElements">
-                <Collapse
-                    collapseTitle="Description"
-                    collapseContent={<p>{apartment.description}</p>}
-                />
-                <Collapse
-                    collapseTitle="Équipements"
-                    collapseContent={
-                        <ul>
-                            {apartment.equipments.map((equipement) => (
-                                <li key={equipement}>{equipement}</li>
-                            ))}
-                        </ul>
-                    }
-                />
+                <Collapse collapseTitle="Description">
+                    <p>{apartment.description}</p>
+                </Collapse>
+                <Collapse collapseTitle="Équipements">
+                    <ul>
+                        {apartment.equipments.map((equipement) => (
+                            <li key={equipement}>{equipement}</li>
+                        ))}
+                    </ul>
+                </Collapse>
             </div>
         </div>
     ) : (

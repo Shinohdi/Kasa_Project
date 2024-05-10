@@ -53,10 +53,15 @@
     justify-content: flex-start;
   }
   .banner__text h1 {
-    width: 380px;
-    top: 10px;
+    max-width: 80%;
+    top: 0;
     padding-left: 30px;
-    font-size: 40px;
+    font-size: 5.5vw;
     text-shadow: none;
+  }
+}
+@media (max-width: 500px) {
+  .banner__text h1 {
+    top: 55px;
   }
 }/*# sourceMappingURL=Banner.css.map */

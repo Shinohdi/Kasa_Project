@@ -62,11 +62,21 @@
             justify-content: flex-start;
 
             h1 {
-                width: 380px;
-                top: 10px;
+                max-width: 80%;
+                top: 0;
                 padding-left: 30px;
-                font-size: 40px;
+                font-size: 5.5vw;
                 text-shadow: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .banner {
+        &__text {
+            h1 {
+                top: 55px;
             }
         }
     }

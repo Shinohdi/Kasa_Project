@@ -1,129 +1,130 @@
 .page {
-    margin: 60px 120px 50px 120px;
+  margin: 60px 120px 50px 120px;
 }
 .page__carousel {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 415px;
-    position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 415px;
+  position: relative;
 }
 .page__property {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .page__property--text .title {
-    color: #ff6060;
-    font-size: 36px;
-    font-weight: 500;
-    margin: 0;
+  color: #ff6060;
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
 }
 .page__property--text .location {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 500;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
 }
 .page__property--text .tags {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 .page__property--text .tags .tag {
-    color: white;
-    text-align: center;
-    padding: 5px 15px 5px 15px;
-    min-width: 100px;
-    border-radius: 10px;
-    background-color: #ff6060;
+  color: white;
+  text-align: center;
+  padding: 5px 15px 5px 15px;
+  min-width: 100px;
+  border-radius: 10px;
+  background-color: #ff6060;
 }
 .page__property--specifics {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .page__property--specifics .host {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 .page__property--specifics .host .name {
-    text-align: end;
-    color: #ff6060;
-    font-size: 18px;
-    max-width: 93px;
+  text-align: end;
+  color: #ff6060;
+  font-size: 18px;
+  max-width: 93px;
 }
 .page__property--specifics .host .picture {
-    width: 64px;
-    height: 64px;
-    clip-path: circle(50%);
+  width: 64px;
+  height: 64px;
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
 }
 .page__property--specifics .ratings {
-    display: flex;
-    justify-content: end;
-    gap: 10px;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
 }
 .page__property--specifics .ratings .fa-star {
-    font-size: 24px;
+  font-size: 24px;
 }
 .page__property--specifics .ratings .colored {
-    color: #ff6060;
+  color: #ff6060;
 }
 .page__property--specifics .ratings .noColor {
-    color: #e3e3e3;
+  color: #e3e3e3;
 }
 .page__collapseElements {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
 }
 .page__collapseElements .collapse {
-    width: 45%;
+  width: 45%;
 }
 
 @media (max-width: 1024px) {
-    .page {
-        margin: 60px 25px 50px 25px;
-    }
-    .page__property {
-        flex-direction: column;
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }
-    .page__property--text .title {
-        font-size: 28px;
-    }
-    .page__property--text .location {
-        margin-top: 15px;
-    }
-    .page__property--text .tags {
-        margin-top: 10px;
-        flex-wrap: wrap;
-    }
-    .page__property--specifics {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 15px;
-    }
-    .page__property--specifics .host .picture {
-        width: 50px;
-        height: 50px;
-    }
-    .page__property--specifics .ratings .fa-star {
-        font-size: 20px;
-    }
-    .page__collapseElements {
-        flex-direction: column;
-        gap: 35px;
-    }
-    .page__collapseElements .collapse {
-        width: 100%;
-    }
-} /*# sourceMappingURL=Logement.css.map */
+  .page {
+    margin: 60px 25px 50px 25px;
+  }
+  .page__property {
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .page__property--text .title {
+    font-size: 28px;
+  }
+  .page__property--text .location {
+    margin-top: 15px;
+  }
+  .page__property--text .tags {
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .page__property--specifics {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .page__property--specifics .host .picture {
+    width: 50px;
+    height: 50px;
+  }
+  .page__property--specifics .ratings .fa-star {
+    font-size: 3vw;
+  }
+  .page__collapseElements {
+    flex-direction: column;
+    gap: 35px;
+  }
+  .page__collapseElements .collapse {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Logement.css.map */
